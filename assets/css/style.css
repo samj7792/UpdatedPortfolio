@@ -1,0 +1,211 @@
+body {
+    background-image: url("../images/background_pattern.png");
+    color: #777777;
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+    font-size: 16px;
+
+}
+
+/*position attribute sticks header to top;
+width*/
+header {
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 3px solid #777777;
+    position: fixed;
+
+}
+
+/*max-width allows container to shrink with padge width*/
+.headcontainer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*location of name in header;
+background color needs to reach top and bottom of header*/
+h1 {
+    float: left;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 40px;
+    margin: 0;
+}
+
+
+/*transform property vertically centers nav in header*/
+nav {
+    float: right;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+/*text-decoration attribute remove underline on links in nav;
+color attribute makes link font same as text;
+combined with a:visited so that visited links are same color as unvisited*/
+a:link, a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+
+/*colors link font blue when hovered and/or clicked*/
+a:hover, a:active{
+    color: blue;
+
+}
+
+/*forces section to cover photo if text is not long enough to pass it*/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*max-width allows container to shrink with padge width*/
+.container {
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #777777;
+    margin-top: 132px;
+    margin-bottom: 77px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    color: #4aaaa5;
+
+}
+
+/*width matches text width*/
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*float property puts it to side of #main-bio*/
+#headshot {
+    padding: 20px 20px 0px 20px;
+    float: left;
+    height: 190px;
+    width: 115px;
+}
+
+#main-bio {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+/*stick footer to bottom of page with positon, left, and bottom properties;*/
+.footer {
+    background-color: #777777;
+    color: #ffffff;
+    padding-top: 20px;
+    margin-top: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    
+}
+
+/*The following #proj ids represent my portfolio projects;
+The urls will be replaced with relevant images later;*/
+#proj1{
+    background-image: url(../images/logopodcast.jpg);
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+}
+
+#proj2{
+    background-image: url(../images/gem-collector.jpg);
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+}
+
+#proj3{
+    background-image: url(../images/trivia.png);
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+}
+
+#proj4{
+    background-image: url(../images/giftastic.gif);
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+}
+
+#proj5{
+    background-image: url(../images/train.jpg);
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+}
+
+
+/*needs to be at bottom of articles*/
+h3 {
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 236px;
+}
+
+#projects {
+    color: #ffffff;
+    
+}
+
+.formcontainer {
+    padding: 20px;
+    margin-right: 15px;
+}
+
+/*resize: none; prevents the message box from being adjusted by the user;
+border attribute makes borders uniform;
+font attributes make font in input fields uniform;*/
+#name,
+#email,
+#message {
+    width: 100%;
+    resize: none;
+    background-color: rgb(231, 231, 231);
+    padding: 5px;
+    border: 2px ridge lightgray;
+    font-family: Times;
+    font-size: 16px;
+}
+
+#submit {
+    background-color: #4aaaa5;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+}
